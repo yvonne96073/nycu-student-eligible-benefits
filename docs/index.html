@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYCU 學生優惠 | Student Benefits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">NATIONAL YANG MING CHIAO TUNG UNIVERSITY</p>
+      <h1 class="hero-title">STUDENT<br>BENEFITS</h1>
+      <p class="hero-desc">自動搜集、分類、更新的 NYCU 學生優惠清單</p>
+      <div class="hero-meta">
+        <span id="update-time"></span>
+        <span id="total-count"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter -->
+  <nav class="filters">
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="可用">可用</button>
+      <button class="filter-btn" data-filter="可能可用">可能可用</button>
+    </div>
+    <div class="filter-group">
+      <button class="filter-btn active" data-loc="all">所有地點</button>
+      <button class="filter-btn" data-loc="NYCU 校區周邊">NYCU</button>
+      <button class="filter-btn" data-loc="台北">台北</button>
+      <button class="filter-btn" data-loc="新竹">新竹</button>
+      <button class="filter-btn" data-loc="線上">線上</button>
+      <button class="filter-btn" data-loc="全台">全台</button>
+    </div>
+  </nav>
+
+  <!-- Benefits List -->
+  <main class="benefits" id="benefits-list">
+    <div class="loading">載入優惠資料中...</div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>資料每日自動更新 &middot; 過期優惠自動下架</p>
+    <p class="footer-sub">Built for NYCU students &middot; <a href="https://github.com" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

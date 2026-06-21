@@ -1,0 +1,4 @@
+.env
+__pycache__/
+*.pyc
+generate_test_data.py

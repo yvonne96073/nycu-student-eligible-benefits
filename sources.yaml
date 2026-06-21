@@ -1,0 +1,395 @@
+sources:
+
+  # ── A. NYCU 官方來源 ──────────────────────────────────────────────────────
+  - id: nycu_partner_stores
+    name: NYCU 特約商店
+    url: https://hr.nycu.edu.tw/hr/ch/app/artwebsite/view?module=artwebsite&id=348&serno=9dbb428d-8729-4aaa-b4a4-086508f0d38f
+    source_type: html
+    category_hint: 商店
+    is_nycu_official: true
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 陽明交大人事室特約商店清單（教職員 / 學生均適用）
+
+  - id: nycu_osa
+    name: NYCU 學生事務處
+    url: https://osa.nycu.edu.tw/
+    source_type: html
+    category_hint: 校園活動
+    is_nycu_official: true
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 學生事務處首頁，含活動、社團、服務公告
+
+  - id: nycu_homepage
+    name: NYCU 首頁公告
+    url: https://www.nycu.edu.tw/
+    source_type: html
+    category_hint: 校園活動
+    is_nycu_official: true
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 陽明交大首頁，含校園公告與活動
+
+  # ── B. 展覽與博物館 ───────────────────────────────────────────────────────
+  - id: npam_tickets
+    name: 台北表演藝術中心票價
+    url: https://www.tpac-taipei.org/
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 北藝公開票價頁，確認學生票資格
+
+  - id: ntm_tickets
+    name: 國立台灣博物館票價
+    url: https://www.ntm.gov.tw/cp.aspx?n=5444
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 半票 15 元：學生、6-12 歲兒童、65 歲以上
+
+  - id: moca_taipei_tickets
+    name: 台北當代藝術館票價
+    url: https://www.mocataipei.org.tw/tw/Visit/%E6%99%82%E9%96%93%E8%88%87%E7%A5%A8%E5%83%B9
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 優待票 50 元：國中以上在校學生證
+
+  - id: tfam_tickets
+    name: 台北市立美術館票價
+    url: https://www.tfam.museum/Common/editor.aspx?id=230
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 優待票 15 元：18 歲以上在校學生（不含社大短期進修）
+
+  - id: npm_tickets
+    name: 國立故宮博物院票價
+    url: https://www.npm.gov.tw/Articles.aspx?sno=02007004&l=1
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 持國際學生證 ISIC 可享優惠
+
+  - id: nmth_tickets
+    name: 國立台灣歷史博物館票價
+    url: https://www.nmth.gov.tw/cp.aspx?n=4089
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 學生票 50 元
+
+  - id: nmh_tickets
+    name: 國立歷史博物館票價
+    url: https://www.nmh.gov.tw/cp.aspx?n=7146
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 優待票 40 元：學生（持有效學生證或入學通知）
+
+  - id: nstm_tickets
+    name: 國立科學工藝博物館票價
+    url: https://www.nstm.gov.tw/cp.aspx?n=14
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 高雄科工館學生票
+
+  - id: hca_tickets
+    name: 新竹市文化局活動票價
+    url: https://www.hccc.gov.tw/zh-tw/Ticket/TicketList
+    source_type: html
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 新竹文化局演出票價
+
+  # ── B-2. 軟體與線上學生優惠 ───────────────────────────────────────────────
+  - id: student_free_subscriptions
+    name: 台灣學生免費訂閱指南
+    url: https://claude-world.com/zh-tw/articles/taiwan-student-free-subscriptions-guide-2025-2026/
+    source_type: html
+    category_hint: 軟體
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: GitHub、JetBrains、Azure、Figma 等 55+ 項免費工具
+
+  - id: apple_education_pricing
+    name: Apple 教育優惠
+    url: https://www.apple.com/tw/shop/go/education_pricing
+    source_type: html
+    category_hint: 軟體
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: Apple 教育方案，大專院校學生適用
+
+  # ── B-3. 餐飲連鎖學生優惠 ────────────────────────────────────────────────
+  - id: sogo_hsinchu_student
+    name: 遠東 SOGO 新竹店學生優惠
+    url: https://info.sogo.com.tw/hcbc/news/25061312061394
+    source_type: html
+    category_hint: 餐廳
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: high
+    notes: 持學生證（碩博班 / 大專院校）在吃四方餐廳用餐可換贈品
+
+  - id: jhujian_student
+    name: 築間餐飲集團畢業季優惠
+    url: https://www.jhujian.com.tw/tw/news
+    source_type: html
+    category_hint: 餐廳
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: medium
+    notes: 持學生證 / 教師證享折扣，全台門市
+
+  # ── C. 搜尋來源 (Google Search 類型，第一版 stub) ─────────────────────────
+  - id: search_taipei_student_discount
+    name: 台北學生優惠搜尋
+    url: ""
+    source_type: google_search
+    category_hint: 綜合
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: medium
+    keywords:
+      - "台北 學生優惠 持學生證"
+      - "台北 學生票 大專院校"
+      - "台北 展覽 學生票 2025"
+      - "台北 餐廳 學生證 優惠"
+    notes: 搜尋台北地區學生優惠公開網頁
+
+  - id: search_hsinchu_student_discount
+    name: 新竹學生優惠搜尋
+    url: ""
+    source_type: google_search
+    category_hint: 綜合
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: medium
+    keywords:
+      - "新竹 學生優惠 持學生證"
+      - "新竹 學生票 大專院校"
+      - "新竹 展覽 學生票 2025"
+      - "陽明交大 學生優惠"
+      - "NYCU student discount"
+    notes: 搜尋新竹 / 陽明交大周邊學生優惠
+
+  - id: search_online_student_discount
+    name: 線上學生優惠搜尋
+    url: ""
+    source_type: google_search
+    category_hint: 線上
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: medium
+    keywords:
+      - "線上 學生優惠 研究生"
+      - "軟體 學生優惠 大專院校"
+      - "教育平台 學生優惠"
+      - "學生會員 優惠 在校生"
+    notes: 搜尋線上與全台學生優惠
+
+  - id: search_museum_student_ticket
+    name: 博物館展覽學生票搜尋
+    url: ""
+    source_type: google_search
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: medium
+    keywords:
+      - "博物館 學生票 持學生證"
+      - "展覽 學生票 大專院校 2025"
+      - "表演藝術 學生票"
+    notes: 搜尋博物館與展覽學生票
+
+  # ── D. Threads 來源 ────────────────────────────────────────────────────────
+  - id: threads_student_discount_taipei
+    name: Threads 台北學生優惠監測
+    url: ""
+    source_type: threads_search
+    category_hint: 綜合
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: true
+    source_confidence: medium
+    keywords:
+      - "台北 學生優惠"
+      - "台北 學生票"
+      - "台北 展覽 學生票"
+      - "台北 餐廳 學生證"
+    notes: Threads 搜尋台北學生優惠。需 Threads API token，未設定時跳過。
+
+  - id: threads_student_discount_hsinchu
+    name: Threads 新竹學生優惠監測
+    url: ""
+    source_type: threads_search
+    category_hint: 綜合
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: true
+    source_confidence: medium
+    keywords:
+      - "新竹 學生優惠"
+      - "新竹 學生票"
+      - "陽明交大 優惠"
+      - "交大 學生證 優惠"
+      - "NYCU 優惠"
+    notes: Threads 搜尋新竹 / NYCU 學生優惠。需 Threads API token，未設定時跳過。
+
+  - id: threads_nycu_activity
+    name: Threads NYCU 活動監測
+    url: ""
+    source_type: threads_search
+    category_hint: 校園活動
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: true
+    source_confidence: medium
+    keywords:
+      - "陽明交大 活動"
+      - "交大 活動"
+      - "NYCU 活動"
+      - "研究生 優惠"
+    notes: Threads 搜尋 NYCU 活動與研究生優惠。需 Threads API token，未設定時跳過。
+
+  - id: threads_online_student_discount
+    name: Threads 線上學生優惠監測
+    url: ""
+    source_type: threads_search
+    category_hint: 線上
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: true
+    source_confidence: medium
+    keywords:
+      - "線上 學生優惠"
+      - "學生證 優惠"
+      - "大專院校學生 優惠"
+      - "32歲 學生票"
+    notes: Threads 搜尋線上學生優惠。需 Threads API token，未設定時跳過。
+
+  # Threads 帳號監測（第二層）
+  - id: threads_account_nycu_official
+    name: Threads NYCU 官方帳號
+    url: ""
+    source_type: threads_account
+    category_hint: 校園活動
+    is_nycu_official: true
+    enabled: true
+    requires_api_token: true
+    source_confidence: high
+    account_ids:
+      - nycu.official
+    notes: 監測 NYCU 官方 Threads 帳號（帳號名稱以實際為準）。需 token。
+
+  - id: threads_account_taipei_events
+    name: Threads 台北活動帳號
+    url: ""
+    source_type: threads_account
+    category_hint: 展覽
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: true
+    source_confidence: medium
+    account_ids:
+      - taipeiperformingarts
+      - tpac.taipei
+    notes: 監測台北展演場館 Threads 帳號。需 token。
+
+  # ── E. Facebook（合法授權方式，第一版 stub）────────────────────────────────
+  - id: facebook_nycu_official
+    name: Facebook NYCU 官方粉專
+    url: https://www.facebook.com/NYCU.official
+    source_type: facebook_api
+    category_hint: 校園活動
+    is_nycu_official: true
+    enabled: false
+    requires_api_token: true
+    source_confidence: high
+    notes: 需 Meta Graph API token。第一版 stub，不強制啟用。
+
+  # ── F. Instagram（合法授權方式，第一版 stub）──────────────────────────────
+  - id: instagram_nycu_official
+    name: Instagram NYCU 官方帳號
+    url: ""
+    source_type: instagram_api
+    category_hint: 校園活動
+    is_nycu_official: true
+    enabled: false
+    requires_api_token: true
+    source_confidence: high
+    notes: 需 Instagram Graph API token。第一版 stub，不強制啟用。
+
+  # ── G. Dcard 公開頁（experimental）────────────────────────────────────────
+  - id: dcard_student_discount
+    name: Dcard 學生優惠公開頁
+    url: https://www.dcard.tw/f/deal
+    source_type: dcard_public
+    category_hint: 綜合
+    is_nycu_official: false
+    enabled: true
+    requires_api_token: false
+    source_confidence: low
+    notes: Dcard 優惠版公開頁，experimental。不登入，只取公開內容。
+
+  # ── H. Gmail Newsletter（未來擴充，預留介面）──────────────────────────────
+  - id: gmail_newsletter
+    name: Email Newsletter 學生優惠
+    url: ""
+    source_type: gmail_newsletter
+    category_hint: 綜合
+    is_nycu_official: false
+    enabled: false
+    requires_api_token: true
+    source_confidence: medium
+    keywords:
+      - 學生票
+      - 學生優惠
+      - NYCU
+      - 交大
+      - 展覽
+      - 早鳥票
+    notes: 讀取 Gmail 中符合關鍵字的 EDM。第一版預留介面，需 Gmail OAuth token。
